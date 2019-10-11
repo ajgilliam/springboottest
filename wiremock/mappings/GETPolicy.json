@@ -1,0 +1,15 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPattern": "/pxcentral/api/rest/v1/policies/.*"
+    },
+    "response": {
+        "status": 200,
+		"delayDistribution": {
+        	"type": "uniform",
+        	"lower": 1000,
+        	"upper": 1000
+		},
+        "bodyFileName": "GETPolicy.xml"
+    }
+}
