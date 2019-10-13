@@ -1,9 +1,9 @@
-image: gitpod/workspace-full
+image: 
+  file: .gitpod.dockerfile
 
 tasks:
-  - command: mkdir /workspace/wiremock/ 
-    command: wget -P /workspace/wiremock/ "http://repo1.maven.org/maven2/com/github/tomakehurst/wiremock-standalone/2.25.0/wiremock-standalone-2.25.0.jar" 
-    command: java -jar wiremock-standalone-2.25.0.jar --root-dir /workspace/springboottest/wiremock --port 60600
+  - command: >
+      java -jar wiremock-standalone-2.25.0.jar --root-dir /workspace/springboottest/wiremock --port 60600
     
 ports:
   - port: 60600
