@@ -11,6 +11,5 @@ RUN wget -P /wiremock/ "http://repo1.maven.org/maven2/com/github/tomakehurst/wir
 
 #download zipkin
 RUN mkdir -p /zipkin/
-RUN apk add unzip curl --no-cache && \
-	curl -sSL https://zipkin.io/quickstart.sh | bash -s
-RUN mv zipkin.jar /zipkin/
+RUN -p curl -sSL https://zipkin.io/quickstart.sh | bash -s
+RUN -p mv zipkin.jar /zipkin/
