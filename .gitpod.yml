@@ -5,7 +5,7 @@ tasks:
   - command: >
       java -jar /wiremock/wiremock-standalone-2.25.0.jar --root-dir /workspace/springboottest/wiremock --port 60600
   - command: >
-      java -jar zipkin.jar
+      java -jar /zipkin/zipkin.jar
     
 ports:
   - port: 60600
